@@ -1,0 +1,72 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require "cc/api"
+
+class Parameter
+  attr_accessor :name, :type, :description
+end
+
+class Return
+  attr_accessor :name, :type, :description
+end
+
+class Entry
+  attr_accessor :name, :type, :value, :description
+
+  attr_reader :parameters, :returns
+
+  def initialize; end
+
+  def add_parameter(parameter)
+    @parameters ||= []
+    @parameters << parameter
+  end
+
+  def add_return(r)
+    @returns ||= []
+    @returns << r
+  end
+
+  def to_s
+    if type == :function
+      "#{name}()"
+    elsif !value.nil?
+      "#{name} = #{value}"
+    else
+      name
+    end
+  end
+end
+
+def parse_entry(str)
+  entry = Entry.new
+
+  entry.name = str[/^\w+/]
+
+  raise "Could not parse name from #{str}" if entry.name.nil?
+
+  entry.type = str =~ /^.+\(/ ? :function : :constant
+
+  if entry.type == :constant && str =~ /= (.+)$/
+    entry.value = Regexp.last_match(1)
+    entry.type = case entry.value
+                 when /\d+/
+                   :number
+                 when /^(?:true|false)$/
+                   :boolean
+                 when /^"/
+                   :string
+                 else
+                   :unknown
+                 end
+  else
+    entry.type = :unknown
+  end
+
+  entry
+end
+
+puts parse_entry("CHANNEL_BROADCAST = 65535")
+puts parse_entry("open(modem)")
+puts parse_entry("_HOST")
