@@ -1,0 +1,11 @@
+{
+    "Lua.workspace.ignoreDir": [
+        ".vscode",
+        "out/"
+    ],
+    "[ruby]": {
+      "editor.formatOnPaste": true,
+      "editor.formatOnSave": true,
+      "editor.formatOnSaveMode": "file"
+    }
+}

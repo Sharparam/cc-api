@@ -1,0 +1,260 @@
+return {
+  [ "getMinPos()" ] = {
+    name = "getMinPos",
+    returns = {
+      type = "Table (BlockPos)",
+    },
+  },
+  [ "getHeatedCoolantCapacity()" ] = {
+    returns = {
+      type = "Number (long)",
+    },
+    description = "Get the capacity of the heated coolant tank.",
+    name = "getHeatedCoolantCapacity",
+  },
+  [ "getSteamCapacity()" ] = {
+    returns = {
+      type = "Number (long)",
+    },
+    description = "Get the capacity of the steam tank.",
+    name = "getSteamCapacity",
+  },
+  [ "getBoilCapacity()" ] = {
+    returns = {
+      type = "Number (long)",
+    },
+    description = "Get the maximum possible boil rate for this Boiler, based on the number of Superheating Elements",
+    name = "getBoilCapacity",
+  },
+  [ "getCooledCoolant()" ] = {
+    returns = {
+      type = "Table (ChemicalStack)",
+    },
+    description = "Get the contents of the cooled coolant tank.",
+    name = "getCooledCoolant",
+  },
+  [ "getLength()" ] = {
+    name = "getLength",
+    returns = {
+      type = "Number (int)",
+    },
+  },
+  [ "getCooledCoolantFilledPercentage()" ] = {
+    returns = {
+      type = "Number (double)",
+    },
+    description = "Get the filled percentage of the cooled coolant tank.",
+    name = "getCooledCoolantFilledPercentage",
+  },
+  [ "getWaterNeeded()" ] = {
+    returns = {
+      type = "Number (int)",
+    },
+    description = "Get the amount needed to fill the water tank.",
+    name = "getWaterNeeded",
+  },
+  [ "incrementMode()" ] = {
+    returns = {
+      type = "Nothing",
+    },
+    description = "Toggle the current valve configuration to the next option in the list",
+    name = "incrementMode",
+  },
+  [ "getTemperature()" ] = {
+    returns = {
+      type = "Number (double)",
+    },
+    description = "Get the temperature of the boiler in Kelvin.",
+    name = "getTemperature",
+  },
+  [ "getHeight()" ] = {
+    name = "getHeight",
+    returns = {
+      type = "Number (int)",
+    },
+  },
+  [ "getWaterFilledPercentage()" ] = {
+    returns = {
+      type = "Number (double)",
+    },
+    description = "Get the filled percentage of the water tank.",
+    name = "getWaterFilledPercentage",
+  },
+  [ "getHeatedCoolant()" ] = {
+    returns = {
+      type = "Table (ChemicalStack)",
+    },
+    description = "Get the contents of the heated coolant tank.",
+    name = "getHeatedCoolant",
+  },
+  [ "getCooledCoolantNeeded()" ] = {
+    returns = {
+      type = "Number (long)",
+    },
+    description = "Get the amount needed to fill the cooled coolant tank.",
+    name = "getCooledCoolantNeeded",
+  },
+  [ "getSteamNeeded()" ] = {
+    returns = {
+      type = "Number (long)",
+    },
+    description = "Get the amount needed to fill the steam tank.",
+    name = "getSteamNeeded",
+  },
+  [ "getWidth()" ] = {
+    name = "getWidth",
+    returns = {
+      type = "Number (int)",
+    },
+  },
+  [ "setMode(mode)" ] = {
+    name = "setMode",
+    returns = {
+      type = "Nothing",
+    },
+    description = "Change the configuration of this valve",
+    params = {
+      {
+        type = "String (BoilerValveMode)",
+        name = "mode",
+        values = {
+          "INPUT",
+          "OUTPUT_STEAM",
+          "OUTPUT_COOLANT",
+        },
+      },
+    },
+  },
+  [ "getMode()" ] = {
+    returns = {
+      values = {
+        "INPUT",
+        "OUTPUT_STEAM",
+        "OUTPUT_COOLANT",
+      },
+      type = "String (BoilerValveMode)",
+    },
+    description = "Get the current configuration of this valve",
+    name = "getMode",
+  },
+  [ "getComparatorLevel()" ] = {
+    name = "getComparatorLevel",
+    returns = {
+      type = "Number (int)",
+    },
+  },
+  [ "getHeatedCoolantFilledPercentage()" ] = {
+    returns = {
+      type = "Number (double)",
+    },
+    description = "Get the filled percentage of the heated coolant tank.",
+    name = "getHeatedCoolantFilledPercentage",
+  },
+  [ "help(methodName)" ] = {
+    returns = {
+      type = "Table (String => MethodHelpData)",
+    },
+    name = "help",
+    params = {
+      {
+        name = "methodName",
+        type = "String",
+      },
+    },
+  },
+  [ "isFormed()" ] = {
+    name = "isFormed",
+    returns = {
+      type = "boolean",
+    },
+  },
+  [ "getSuperheaters()" ] = {
+    returns = {
+      type = "Number (int)",
+    },
+    description = "How many superheaters this Boiler has",
+    name = "getSuperheaters",
+  },
+  [ "getHeatedCoolantNeeded()" ] = {
+    returns = {
+      type = "Number (long)",
+    },
+    description = "Get the amount needed to fill the heated coolant tank.",
+    name = "getHeatedCoolantNeeded",
+  },
+  [ "getWaterCapacity()" ] = {
+    returns = {
+      type = "Number (int)",
+    },
+    description = "Get the capacity of the water tank.",
+    name = "getWaterCapacity",
+  },
+  [ "help()" ] = {
+    name = "help",
+    returns = {
+      type = "Table (String => MethodHelpData)",
+    },
+  },
+  [ "getEnvironmentalLoss()" ] = {
+    returns = {
+      type = "Number (double)",
+    },
+    description = "Get the amount of heat lost to the environment in the last tick (Kelvin)",
+    name = "getEnvironmentalLoss",
+  },
+  [ "getMaxBoilRate()" ] = {
+    returns = {
+      type = "Number (int)",
+    },
+    description = "Get the maximum rate of boiling seen (mB/t)",
+    name = "getMaxBoilRate",
+  },
+  [ "getSteam()" ] = {
+    returns = {
+      type = "Table (ChemicalStack)",
+    },
+    description = "Get the contents of the steam tank.",
+    name = "getSteam",
+  },
+  [ "getMaxPos()" ] = {
+    name = "getMaxPos",
+    returns = {
+      type = "Table (BlockPos)",
+    },
+  },
+  [ "getCooledCoolantCapacity()" ] = {
+    returns = {
+      type = "Number (long)",
+    },
+    description = "Get the capacity of the cooled coolant tank.",
+    name = "getCooledCoolantCapacity",
+  },
+  [ "getBoilRate()" ] = {
+    returns = {
+      type = "Number (int)",
+    },
+    description = "Get the rate of boiling (mB/t)",
+    name = "getBoilRate",
+  },
+  [ "getSteamFilledPercentage()" ] = {
+    returns = {
+      type = "Number (double)",
+    },
+    description = "Get the filled percentage of the steam tank.",
+    name = "getSteamFilledPercentage",
+  },
+  [ "getWater()" ] = {
+    returns = {
+      type = "Table (FluidStack)",
+    },
+    description = "Get the contents of the water tank.",
+    name = "getWater",
+  },
+  [ "decrementMode()" ] = {
+    returns = {
+      type = "Nothing",
+    },
+    description = "Toggle the current valve configuration to the previous option in the list",
+    name = "decrementMode",
+  },
+}
