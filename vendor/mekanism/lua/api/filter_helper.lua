@@ -1,0 +1,167 @@
+return {
+  [ "createMinerTagFilter(tag)" ] = {
+    name = "createMinerTagFilter",
+    returns = {
+      type = "Table (MinerTagFilter)",
+    },
+    description = "Create a Digital Miner Tag Filter from a Tag name",
+    params = {
+      {
+        name = "tag",
+        type = "String",
+      },
+    },
+  },
+  [ "createOredictionificatorItemFilter(filterTag)" ] = {
+    name = "createOredictionificatorItemFilter",
+    returns = {
+      type = "Table (OredictionificatorItemFilter)",
+    },
+    description = "Create an Oredictionificator filter from a tag, without specifying an output item",
+    params = {
+      {
+        name = "filterTag",
+        type = "String (ResourceLocation)",
+      },
+    },
+  },
+  [ "createSorterModIdFilter(modId)" ] = {
+    name = "createSorterModIdFilter",
+    returns = {
+      type = "Table (SorterModIDFilter)",
+    },
+    description = "Create a Logistical Sorter Mod Id Filter structure from a mod id",
+    params = {
+      {
+        name = "modId",
+        type = "String",
+      },
+    },
+  },
+  [ "help()" ] = {
+    name = "help",
+    returns = {
+      type = "Table (String => MethodHelpData)",
+    },
+  },
+  [ "createMinerModIdFilter(modId)" ] = {
+    name = "createMinerModIdFilter",
+    returns = {
+      type = "Table (MinerModIDFilter)",
+    },
+    description = "Create a Digital Miner Mod Id Filter from a mod id",
+    params = {
+      {
+        name = "modId",
+        type = "String",
+      },
+    },
+  },
+  [ "help(methodName)" ] = {
+    returns = {
+      type = "Table (String => MethodHelpData)",
+    },
+    name = "help",
+    params = {
+      {
+        name = "methodName",
+        type = "String",
+      },
+    },
+  },
+  [ "createOredictionificatorItemFilter(filterTag, selectedOutput)" ] = {
+    name = "createOredictionificatorItemFilter",
+    returns = {
+      type = "Table (OredictionificatorItemFilter)",
+    },
+    description = "Create an Oredictionificator filter from a tag and a selected output. The output is not validated.",
+    params = {
+      {
+        name = "filterTag",
+        type = "String (ResourceLocation)",
+      },
+      {
+        name = "selectedOutput",
+        type = "String (Item)",
+      },
+    },
+  },
+  [ "createSorterTagFilter(tag)" ] = {
+    name = "createSorterTagFilter",
+    returns = {
+      type = "Table (SorterTagFilter)",
+    },
+    description = "Create a Logistical Sorter Tag Filter from a tag",
+    params = {
+      {
+        name = "tag",
+        type = "String",
+      },
+    },
+  },
+  [ "createMinerItemFilter(item)" ] = {
+    name = "createMinerItemFilter",
+    returns = {
+      type = "Table (MinerItemStackFilter)",
+    },
+    description = "Create a Digital Miner Item Filter from an Item name",
+    params = {
+      {
+        name = "item",
+        type = "String (Item)",
+      },
+    },
+  },
+  [ "createSorterItemFilter(item)" ] = {
+    name = "createSorterItemFilter",
+    returns = {
+      type = "Table (SorterItemStackFilter)",
+    },
+    description = "Create a Logistical Sorter Item Filter structure from an Item name",
+    params = {
+      {
+        name = "item",
+        type = "String (Item)",
+      },
+    },
+  },
+  [ "createQIOItemFilter(item)" ] = {
+    name = "createQIOItemFilter",
+    returns = {
+      type = "Table (QIOItemStackFilter)",
+    },
+    description = "Create a QIO Item Filter structure from an Item name",
+    params = {
+      {
+        name = "item",
+        type = "String (Item)",
+      },
+    },
+  },
+  [ "createQIOTagFilter(tag)" ] = {
+    name = "createQIOTagFilter",
+    returns = {
+      type = "Table (QIOTagFilter)",
+    },
+    description = "Create a QIO Tag Filter from a Tag name",
+    params = {
+      {
+        name = "tag",
+        type = "String",
+      },
+    },
+  },
+  [ "createQIOModIdFilter(modId)" ] = {
+    name = "createQIOModIdFilter",
+    returns = {
+      type = "Table (QIOModIDFilter)",
+    },
+    description = "Create a QIO Mod Id Filter from a mod id",
+    params = {
+      {
+        name = "modId",
+        type = "String",
+      },
+    },
+  },
+}

@@ -1,0 +1,84 @@
+{
+  "getMinPos()": {
+    "name": "getMinPos",
+    "returns": { "type": "Table (BlockPos)" }
+  },
+  "getMaxEnergy()": {
+    "name": "getMaxEnergy",
+    "returns": { "type": "Number (FloatingLong)" }
+  },
+  "getMaxPos()": {
+    "name": "getMaxPos",
+    "returns": { "type": "Table (BlockPos)" }
+  },
+  "getMode()": {
+    "returns": { "type": "boolean" },
+    "description": "true -> output, false -> input.",
+    "name": "getMode"
+  },
+  "getComparatorLevel()": {
+    "name": "getComparatorLevel",
+    "returns": { "type": "Number (int)" }
+  },
+  "getEnergy()": {
+    "name": "getEnergy",
+    "returns": { "type": "Number (FloatingLong)" }
+  },
+  "getInputItem()": {
+    "returns": { "type": "Table (ItemStack)" },
+    "description": "Get the contents of the input slot.",
+    "name": "getInputItem"
+  },
+  "getInstalledProviders()": {
+    "name": "getInstalledProviders",
+    "returns": { "type": "Number (int)" }
+  },
+  "getHeight()": { "name": "getHeight", "returns": { "type": "Number (int)" } },
+  "setMode(output)": {
+    "name": "setMode",
+    "returns": { "type": "Nothing" },
+    "description": "true -> output, false -> input",
+    "params": [{ "name": "output", "type": "boolean" }]
+  },
+  "getEnergyFilledPercentage()": {
+    "name": "getEnergyFilledPercentage",
+    "returns": { "type": "Number (double)" }
+  },
+  "getEnergyNeeded()": {
+    "name": "getEnergyNeeded",
+    "returns": { "type": "Number (FloatingLong)" }
+  },
+  "help()": {
+    "name": "help",
+    "returns": { "type": "Table (String => MethodHelpData)" }
+  },
+  "getInstalledCells()": {
+    "name": "getInstalledCells",
+    "returns": { "type": "Number (int)" }
+  },
+  "help(methodName)": {
+    "returns": { "type": "Table (String => MethodHelpData)" },
+    "name": "help",
+    "params": [{ "name": "methodName", "type": "String" }]
+  },
+  "getLastOutput()": {
+    "name": "getLastOutput",
+    "returns": { "type": "Number (FloatingLong)" }
+  },
+  "getOutputItem()": {
+    "returns": { "type": "Table (ItemStack)" },
+    "description": "Get the contents of the output slot.",
+    "name": "getOutputItem"
+  },
+  "getLength()": { "name": "getLength", "returns": { "type": "Number (int)" } },
+  "getWidth()": { "name": "getWidth", "returns": { "type": "Number (int)" } },
+  "getLastInput()": {
+    "name": "getLastInput",
+    "returns": { "type": "Number (FloatingLong)" }
+  },
+  "getTransferCap()": {
+    "name": "getTransferCap",
+    "returns": { "type": "Number (FloatingLong)" }
+  },
+  "isFormed()": { "name": "isFormed", "returns": { "type": "boolean" } }
+}

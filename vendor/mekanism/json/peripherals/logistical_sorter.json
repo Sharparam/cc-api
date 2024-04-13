@@ -1,0 +1,185 @@
+{
+  "isRoundRobin()": {
+    "name": "isRoundRobin",
+    "returns": { "type": "boolean" }
+  },
+  "getAutoMode()": { "name": "getAutoMode", "returns": { "type": "boolean" } },
+  "setRoundRobin(value)": {
+    "returns": { "type": "Nothing" },
+    "name": "setRoundRobin",
+    "params": [{ "name": "value", "type": "boolean" }]
+  },
+  "getFilters()": {
+    "name": "getFilters",
+    "returns": { "type": "List (Table (SorterFilter))" }
+  },
+  "getDirection()": {
+    "name": "getDirection",
+    "returns": {
+      "values": ["DOWN", "UP", "NORTH", "SOUTH", "WEST", "EAST"],
+      "type": "String (Direction)"
+    }
+  },
+  "setAutoMode(value)": {
+    "returns": { "type": "Nothing" },
+    "name": "setAutoMode",
+    "params": [{ "name": "value", "type": "boolean" }]
+  },
+  "getComparatorLevel()": {
+    "name": "getComparatorLevel",
+    "returns": { "type": "Number (int)" }
+  },
+  "setSingle(value)": {
+    "returns": { "type": "Nothing" },
+    "name": "setSingle",
+    "params": [{ "name": "value", "type": "boolean" }]
+  },
+  "getOwnerName()": { "name": "getOwnerName", "returns": { "type": "String" } },
+  "setRedstoneMode(type)": {
+    "returns": { "type": "Nothing" },
+    "name": "setRedstoneMode",
+    "params": [
+      {
+        "type": "String (RedstoneControl)",
+        "name": "type",
+        "values": ["DISABLED", "HIGH", "LOW", "PULSE"]
+      }
+    ]
+  },
+  "getOwnerUUID()": {
+    "name": "getOwnerUUID",
+    "returns": { "type": "String (UUID)" }
+  },
+  "decrementDefaultColor()": {
+    "name": "decrementDefaultColor",
+    "returns": { "type": "Nothing" }
+  },
+  "getDefaultColor()": {
+    "name": "getDefaultColor",
+    "returns": {
+      "values": [
+        "BLACK",
+        "DARK_BLUE",
+        "DARK_GREEN",
+        "DARK_AQUA",
+        "DARK_RED",
+        "PURPLE",
+        "ORANGE",
+        "GRAY",
+        "DARK_GRAY",
+        "INDIGO",
+        "BRIGHT_GREEN",
+        "AQUA",
+        "RED",
+        "PINK",
+        "YELLOW",
+        "WHITE",
+        "BROWN",
+        "BRIGHT_PINK"
+      ],
+      "type": "String (EnumColor)"
+    }
+  },
+  "incrementDefaultColor()": {
+    "name": "incrementDefaultColor",
+    "returns": { "type": "Nothing" }
+  },
+  "clearDefaultColor()": {
+    "name": "clearDefaultColor",
+    "returns": { "type": "Nothing" }
+  },
+  "setDefaultColor(color)": {
+    "returns": { "type": "Nothing" },
+    "name": "setDefaultColor",
+    "params": [
+      {
+        "type": "String (EnumColor)",
+        "name": "color",
+        "values": [
+          "BLACK",
+          "DARK_BLUE",
+          "DARK_GREEN",
+          "DARK_AQUA",
+          "DARK_RED",
+          "PURPLE",
+          "ORANGE",
+          "GRAY",
+          "DARK_GRAY",
+          "INDIGO",
+          "BRIGHT_GREEN",
+          "AQUA",
+          "RED",
+          "PINK",
+          "YELLOW",
+          "WHITE",
+          "BROWN",
+          "BRIGHT_PINK"
+        ]
+      }
+    ]
+  },
+  "help()": {
+    "name": "help",
+    "returns": { "type": "Table (String => MethodHelpData)" }
+  },
+  "getSupportedUpgrades()": {
+    "name": "getSupportedUpgrades",
+    "returns": {
+      "values": [
+        "SPEED",
+        "ENERGY",
+        "FILTER",
+        "GAS",
+        "MUFFLING",
+        "ANCHOR",
+        "STONE_GENERATOR"
+      ],
+      "type": "List (String (Upgrade))"
+    }
+  },
+  "addFilter(filter)": {
+    "returns": { "type": "boolean" },
+    "name": "addFilter",
+    "params": [{ "name": "filter", "type": "Table (SorterFilter)" }]
+  },
+  "getRedstoneMode()": {
+    "name": "getRedstoneMode",
+    "returns": {
+      "values": ["DISABLED", "HIGH", "LOW", "PULSE"],
+      "type": "String (RedstoneControl)"
+    }
+  },
+  "help(methodName)": {
+    "returns": { "type": "Table (String => MethodHelpData)" },
+    "name": "help",
+    "params": [{ "name": "methodName", "type": "String" }]
+  },
+  "getSecurityMode()": {
+    "name": "getSecurityMode",
+    "returns": {
+      "values": ["PUBLIC", "PRIVATE", "TRUSTED"],
+      "type": "String (SecurityMode)"
+    }
+  },
+  "isSingle()": { "name": "isSingle", "returns": { "type": "boolean" } },
+  "getInstalledUpgrades()": {
+    "name": "getInstalledUpgrades",
+    "returns": {
+      "values": [
+        "SPEED",
+        "ENERGY",
+        "FILTER",
+        "GAS",
+        "MUFFLING",
+        "ANCHOR",
+        "STONE_GENERATOR"
+      ],
+      "type": "Table (String (Upgrade) => Number (int))"
+    }
+  },
+  "removeFilter(filter)": {
+    "returns": { "type": "boolean" },
+    "name": "removeFilter",
+    "params": [{ "name": "filter", "type": "Table (SorterFilter)" }]
+  }
+}

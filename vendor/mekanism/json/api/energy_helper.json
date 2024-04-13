@@ -1,0 +1,23 @@
+{
+  "help(methodName)": {
+    "returns": { "type": "Table (String => MethodHelpData)" },
+    "name": "help",
+    "params": [{ "name": "methodName", "type": "String" }]
+  },
+  "joulesToFE(joules)": {
+    "name": "joulesToFE",
+    "returns": { "type": "Number (FloatingLong)" },
+    "description": "Convert Mekanism Joules to Forge Energy",
+    "params": [{ "name": "joules", "type": "Number (FloatingLong)" }]
+  },
+  "help()": {
+    "name": "help",
+    "returns": { "type": "Table (String => MethodHelpData)" }
+  },
+  "feToJoules(fe)": {
+    "name": "feToJoules",
+    "returns": { "type": "Number (FloatingLong)" },
+    "description": "Convert Forge Energy to Mekanism Joules",
+    "params": [{ "name": "fe", "type": "Number (FloatingLong)" }]
+  }
+}

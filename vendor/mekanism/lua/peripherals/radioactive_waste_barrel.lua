@@ -1,0 +1,68 @@
+return {
+  [ "help(methodName)" ] = {
+    returns = {
+      type = "Table (String => MethodHelpData)",
+    },
+    name = "help",
+    params = {
+      {
+        name = "methodName",
+        type = "String",
+      },
+    },
+  },
+  [ "getCapacity()" ] = {
+    returns = {
+      type = "Number (long)",
+    },
+    description = "Get the capacity of the barrel.",
+    name = "getCapacity",
+  },
+  [ "getComparatorLevel()" ] = {
+    name = "getComparatorLevel",
+    returns = {
+      type = "Number (int)",
+    },
+  },
+  [ "getNeeded()" ] = {
+    returns = {
+      type = "Number (long)",
+    },
+    description = "Get the amount needed to fill the barrel.",
+    name = "getNeeded",
+  },
+  [ "getDirection()" ] = {
+    name = "getDirection",
+    returns = {
+      values = {
+        "DOWN",
+        "UP",
+        "NORTH",
+        "SOUTH",
+        "WEST",
+        "EAST",
+      },
+      type = "String (Direction)",
+    },
+  },
+  [ "getFilledPercentage()" ] = {
+    returns = {
+      type = "Number (double)",
+    },
+    description = "Get the filled percentage of the barrel.",
+    name = "getFilledPercentage",
+  },
+  [ "help()" ] = {
+    name = "help",
+    returns = {
+      type = "Table (String => MethodHelpData)",
+    },
+  },
+  [ "getStored()" ] = {
+    returns = {
+      type = "Table (ChemicalStack)",
+    },
+    description = "Get the contents of the barrel.",
+    name = "getStored",
+  },
+}

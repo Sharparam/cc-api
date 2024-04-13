@@ -1,0 +1,58 @@
+{
+  [ "help(methodName)" ] = {
+    returns = {
+      type = "Table (String => MethodHelpData)",
+    },
+    name = "help",
+    params = {
+      {
+        name = "methodName",
+        type = "String",
+      },
+    },
+  },
+  [ "getMaxEnergy()" ] = {
+    name = "getMaxEnergy",
+    returns = {
+      type = "Number (FloatingLong)",
+    },
+  },
+  [ "getEnergy()" ] = {
+    name = "getEnergy",
+    returns = {
+      type = "Number (FloatingLong)",
+    },
+  },
+  [ "getEnergyFilledPercentage()" ] = {
+    name = "getEnergyFilledPercentage",
+    returns = {
+      type = "Number (double)",
+    },
+  },
+  [ "getEnergyNeeded()" ] = {
+    name = "getEnergyNeeded",
+    returns = {
+      type = "Number (FloatingLong)",
+    },
+  },
+  [ "help()" ] = {
+    name = "help",
+    returns = {
+      type = "Table (String => MethodHelpData)",
+    },
+  },
+  [ "getDirection()" ] = {
+    name = "getDirection",
+    returns = {
+      values = {
+        "DOWN",
+        "UP",
+        "NORTH",
+        "SOUTH",
+        "WEST",
+        "EAST",
+      },
+      type = "String (Direction)",
+    },
+  },
+}

@@ -1,0 +1,134 @@
+{
+  "getEnergyItem()": {
+    "returns": { "type": "Table (ItemStack)" },
+    "description": "Get the contents of the energy slot.",
+    "name": "getEnergyItem"
+  },
+  "getMaxEnergy()": {
+    "name": "getMaxEnergy",
+    "returns": { "type": "Number (FloatingLong)" }
+  },
+  "getDirection()": {
+    "name": "getDirection",
+    "returns": {
+      "values": ["DOWN", "UP", "NORTH", "SOUTH", "WEST", "EAST"],
+      "type": "String (Direction)"
+    }
+  },
+  "getFluid()": {
+    "returns": { "type": "Table (FluidStack)" },
+    "description": "Get the contents of the buffer tank.",
+    "name": "getFluid"
+  },
+  "getComparatorLevel()": {
+    "name": "getComparatorLevel",
+    "returns": { "type": "Number (int)" }
+  },
+  "getEnergy()": {
+    "name": "getEnergy",
+    "returns": { "type": "Number (FloatingLong)" }
+  },
+  "getInputItem()": {
+    "returns": { "type": "Table (ItemStack)" },
+    "description": "Get the contents of the input slot.",
+    "name": "getInputItem"
+  },
+  "getInstalledUpgrades()": {
+    "name": "getInstalledUpgrades",
+    "returns": {
+      "values": [
+        "SPEED",
+        "ENERGY",
+        "FILTER",
+        "GAS",
+        "MUFFLING",
+        "ANCHOR",
+        "STONE_GENERATOR"
+      ],
+      "type": "Table (String (Upgrade) => Number (int))"
+    }
+  },
+  "getOwnerName()": { "name": "getOwnerName", "returns": { "type": "String" } },
+  "setRedstoneMode(type)": {
+    "returns": { "type": "Nothing" },
+    "name": "setRedstoneMode",
+    "params": [
+      {
+        "type": "String (RedstoneControl)",
+        "name": "type",
+        "values": ["DISABLED", "HIGH", "LOW", "PULSE"]
+      }
+    ]
+  },
+  "getOwnerUUID()": {
+    "name": "getOwnerUUID",
+    "returns": { "type": "String (UUID)" }
+  },
+  "getEnergyFilledPercentage()": {
+    "name": "getEnergyFilledPercentage",
+    "returns": { "type": "Number (double)" }
+  },
+  "getEnergyNeeded()": {
+    "name": "getEnergyNeeded",
+    "returns": { "type": "Number (FloatingLong)" }
+  },
+  "help()": {
+    "name": "help",
+    "returns": { "type": "Table (String => MethodHelpData)" }
+  },
+  "getOutputItem()": {
+    "returns": { "type": "Table (ItemStack)" },
+    "description": "Get the contents of the output slot.",
+    "name": "getOutputItem"
+  },
+  "getSupportedUpgrades()": {
+    "name": "getSupportedUpgrades",
+    "returns": {
+      "values": [
+        "SPEED",
+        "ENERGY",
+        "FILTER",
+        "GAS",
+        "MUFFLING",
+        "ANCHOR",
+        "STONE_GENERATOR"
+      ],
+      "type": "List (String (Upgrade))"
+    }
+  },
+  "getFluidNeeded()": {
+    "returns": { "type": "Number (int)" },
+    "description": "Get the amount needed to fill the buffer tank.",
+    "name": "getFluidNeeded"
+  },
+  "getRedstoneMode()": {
+    "name": "getRedstoneMode",
+    "returns": {
+      "values": ["DISABLED", "HIGH", "LOW", "PULSE"],
+      "type": "String (RedstoneControl)"
+    }
+  },
+  "help(methodName)": {
+    "returns": { "type": "Table (String => MethodHelpData)" },
+    "name": "help",
+    "params": [{ "name": "methodName", "type": "String" }]
+  },
+  "getSecurityMode()": {
+    "name": "getSecurityMode",
+    "returns": {
+      "values": ["PUBLIC", "PRIVATE", "TRUSTED"],
+      "type": "String (SecurityMode)"
+    }
+  },
+  "getFluidFilledPercentage()": {
+    "returns": { "type": "Number (double)" },
+    "description": "Get the filled percentage of the buffer tank.",
+    "name": "getFluidFilledPercentage"
+  },
+  "reset()": { "name": "reset", "returns": { "type": "Nothing" } },
+  "getFluidCapacity()": {
+    "returns": { "type": "Number (int)" },
+    "description": "Get the capacity of the buffer tank.",
+    "name": "getFluidCapacity"
+  }
+}

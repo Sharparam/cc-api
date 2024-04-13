@@ -1,0 +1,30 @@
+{
+  "help(methodName)": {
+    "returns": { "type": "Table (String => MethodHelpData)" },
+    "name": "help",
+    "params": [{ "name": "methodName", "type": "String" }]
+  },
+  "getOwnerUUID()": {
+    "name": "getOwnerUUID",
+    "returns": { "type": "String (UUID)" }
+  },
+  "getSecurityMode()": {
+    "name": "getSecurityMode",
+    "returns": {
+      "values": ["PUBLIC", "PRIVATE", "TRUSTED"],
+      "type": "String (SecurityMode)"
+    }
+  },
+  "getDirection()": {
+    "name": "getDirection",
+    "returns": {
+      "values": ["DOWN", "UP", "NORTH", "SOUTH", "WEST", "EAST"],
+      "type": "String (Direction)"
+    }
+  },
+  "help()": {
+    "name": "help",
+    "returns": { "type": "Table (String => MethodHelpData)" }
+  },
+  "getOwnerName()": { "name": "getOwnerName", "returns": { "type": "String" } }
+}

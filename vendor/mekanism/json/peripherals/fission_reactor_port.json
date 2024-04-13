@@ -1,0 +1,37 @@
+{
+  "help(methodName)": {
+    "returns": { "type": "Table (String => MethodHelpData)" },
+    "name": "help",
+    "params": [{ "name": "methodName", "type": "String" }]
+  },
+  "getMode()": {
+    "name": "getMode",
+    "returns": {
+      "values": ["INPUT", "OUTPUT_WASTE", "OUTPUT_COOLANT"],
+      "type": "String (FissionPortMode)"
+    }
+  },
+  "help()": {
+    "name": "help",
+    "returns": { "type": "Table (String => MethodHelpData)" }
+  },
+  "setMode(mode)": {
+    "returns": { "type": "Nothing" },
+    "name": "setMode",
+    "params": [
+      {
+        "type": "String (FissionPortMode)",
+        "name": "mode",
+        "values": ["INPUT", "OUTPUT_WASTE", "OUTPUT_COOLANT"]
+      }
+    ]
+  },
+  "decrementMode()": {
+    "name": "decrementMode",
+    "returns": { "type": "Nothing" }
+  },
+  "incrementMode()": {
+    "name": "incrementMode",
+    "returns": { "type": "Nothing" }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  [ "help()" ] = {
+    name = "help",
+    returns = {
+      type = "Table (String => MethodHelpData)",
+    },
+  },
+  [ "getEnvironmentalLoss()" ] = {
+    name = "getEnvironmentalLoss",
+    returns = {
+      type = "Number (double)",
+    },
+  },
+  [ "help(methodName)" ] = {
+    returns = {
+      type = "Table (String => MethodHelpData)",
+    },
+    name = "help",
+    params = {
+      {
+        name = "methodName",
+        type = "String",
+      },
+    },
+  },
+  [ "getFuelItem()" ] = {
+    returns = {
+      type = "Table (ItemStack)",
+    },
+    description = "Get the contents of the fuel slot.",
+    name = "getFuelItem",
+  },
+  [ "getSecurityMode()" ] = {
+    name = "getSecurityMode",
+    returns = {
+      values = {
+        "PUBLIC",
+        "PRIVATE",
+        "TRUSTED",
+      },
+      type = "String (SecurityMode)",
+    },
+  },
+  [ "getOwnerUUID()" ] = {
+    name = "getOwnerUUID",
+    returns = {
+      type = "String (UUID)",
+    },
+  },
+  [ "getTransferLoss()" ] = {
+    name = "getTransferLoss",
+    returns = {
+      type = "Number (double)",
+    },
+  },
+  [ "getDirection()" ] = {
+    name = "getDirection",
+    returns = {
+      values = {
+        "DOWN",
+        "UP",
+        "NORTH",
+        "SOUTH",
+        "WEST",
+        "EAST",
+      },
+      type = "String (Direction)",
+    },
+  },
+  [ "getOwnerName()" ] = {
+    name = "getOwnerName",
+    returns = {
+      type = "String",
+    },
+  },
+  [ "getTemperature()" ] = {
+    returns = {
+      type = "Number (double)",
+    },
+    description = "Get the temperature of the heater in Kelvin.",
+    name = "getTemperature",
+  },
+}

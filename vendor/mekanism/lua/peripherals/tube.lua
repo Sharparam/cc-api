@@ -1,0 +1,44 @@
+return {
+  [ "getBuffer()" ] = {
+    name = "getBuffer",
+    returns = {
+      type = "Table (ChemicalStack)",
+    },
+  },
+  [ "getCapacity()" ] = {
+    name = "getCapacity",
+    returns = {
+      type = "Number (long)",
+    },
+  },
+  [ "getNeeded()" ] = {
+    name = "getNeeded",
+    returns = {
+      type = "Number (long)",
+    },
+  },
+  [ "getFilledPercentage()" ] = {
+    name = "getFilledPercentage",
+    returns = {
+      type = "Number (double)",
+    },
+  },
+  [ "help()" ] = {
+    name = "help",
+    returns = {
+      type = "Table (String => MethodHelpData)",
+    },
+  },
+  [ "help(methodName)" ] = {
+    returns = {
+      type = "Table (String => MethodHelpData)",
+    },
+    name = "help",
+    params = {
+      {
+        name = "methodName",
+        type = "String",
+      },
+    },
+  },
+}
