@@ -112,8 +112,8 @@
 ---@class MekanismMethodHelpData
 ---@field name? string
 ---@field description? string
----@field params? TypeHelpData[]
----@field returns? TypeHelpData
+---@field params? MekanismTypeHelpData[]
+---@field returns? MekanismTypeHelpData
 
 ---@class MekanismSecurityDesk: Inventory, FluidStorage
 
