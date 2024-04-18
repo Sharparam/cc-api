@@ -103,6 +103,12 @@
 ---| "PRIVATE"
 ---| "TRUSTED"
 
+---@alias MekanismState
+---| "IDLE"
+---| "SEARCHING"
+---| "PAUSED"
+---| "FINISHED"
+
 ---@alias MekanismTransmissionType
 ---| "ENERGY"
 ---| "FLUID"
