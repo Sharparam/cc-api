@@ -30,6 +30,13 @@
 ---| "WEST"
 ---| "EAST"
 
+---@alias MekanismDriveStatus
+---| "NONE"
+---| "OFFLINE"
+---| "READY"
+---| "NEAR_FULL"
+---| "FULL"
+
 ---@alias MekanismEnumColor
 ---| "BLACK"
 ---| "DARK_BLUE"

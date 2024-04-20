@@ -103,6 +103,8 @@
 
 ---@class MekanismTeleporterFrequency: MekanismFrequency
 
+---@class MekanismQIOFrequency: MekanismFrequency
+
 ---@class MekanismTypeHelpData
 ---@field type string
 ---@field name? string
